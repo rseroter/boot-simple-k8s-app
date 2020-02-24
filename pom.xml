@@ -49,7 +49,7 @@
 	<repositories>
 		<repository>
 	       <id>mylibid</id>
-	       <url>file://${basedir}/src/main/resources/lib</url>
+	       <url>file://${basedir}/src/main/resources/repo</url>
 	   </repository>
 	</repositories>
 	<build>
