@@ -16,9 +16,17 @@ public class BootSimpleK8sAppApplication {
 	
 	@GetMapping("/")
 	public String LoadHome(Model model) {
-		
-		return "home";
-		
+		return "home";	
+	}
+	
+	@GetMapping("/about")
+	public String LoadAbout(Model model) {
+		return "home";	
+	}
+	
+	@GetMapping("/products")
+	public String LoadProducts(Model model) {
+		return "home";	
 	}
 
 }
