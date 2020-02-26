@@ -2,10 +2,11 @@ package com.seroter.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 @SpringBootApplication
 public class BootSimpleK8sAppApplication {
 
@@ -14,11 +15,10 @@ public class BootSimpleK8sAppApplication {
 	}
 	
 	@GetMapping("/")
-	public String[] GetTickerSymbols() {
+	public String LoadHome(Model model) {
 		
-		String[] symbols = {"VMW", "PVTL"};
+		return "home";
 		
-		return symbols;
 	}
 
 }
